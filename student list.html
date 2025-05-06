@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Spirit Karate Dojo - Student Management</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .student-management {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .search-box {
+            flex: 1;
+            min-width: 300px;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .filter-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .filter-group select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #b30000;
+            color: white;
+        }
+        .btn-secondary {
+            background-color: #333;
+            color: white;
+        }
+        .student-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .student-table th, .student-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .student-table th {
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
+        .student-table tr:hover {
+            background-color: #f9f9f9;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .badge-kids {
+            background-color: #ffcc00;
+            color: #333;
+        }
+        .badge-teens {
+            background-color: #0099ff;
+            color: white;
+        }
+        .badge-adults {
+            background-color: #b30000;
+            color: white;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 5px;
+        }
+        .pagination button {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+        }
+        .pagination button.active {
+            background-color: #b30000;
+            color: white;
+            border-color: #b30000;
+        }
+        .login-notice {
+            text-align: center;
+            padding: 40px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .login-form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://static.vecteezy.com/system/resources/previews/006/946/260/non_2x/simple-karate-logo-vector.jpg" alt="Dragon Spirit Karate Logo" class="logo">
+        <h1>Dragon Spirit Karate Dojo</h1>
+        <p>Traditional Martial Arts Training Since 1995</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="student list.html">Students</a></li>
+        </ul>
+    </nav>
+    
+    <section class="content">
+        <!-- In a real implementation, this would be protected content -->
+        <!-- For demo purposes, we'll show both logged in and not logged in states -->
+        
+        <div id="loggedInView" style="display: none;">
+            <div class="student-management">
+                <h2>Student Management</h2>
+                
+                <div class="controls">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search students...">
+                    </div>
+                    <div class="filter-group">
+                        <select>
+                            <option>All Classes</option>
+                            <option>Kids Beginner</option>
+                            <option>Kids Intermediate</option>
+                            <option>Teen Class</option>
+                            <option>Adult Beginner</option>
+                            <option>Adult All Levels</option>
+                        </select>
+                        <select>
+                            <option>All Belts</option>
+                            <option>White</option>
+                            <option>Yellow</option>
+                            <option>Orange</option>
+                            <option>Green</option>
+                            <option>Blue</option>
+                            <option>Purple</option>
+                            <option>Brown</option>
+                            <option>Black</option>
+                        </select>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-primary">Add New Student</button>
+                        <button class="btn btn-secondary">Export</button>
+                    </div>
+                </div>
+                
+                <table class="student-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Class</th>
+                            <th>Belt</th>
+                            <th>Join Date</th>
+                            <th>Contact</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1001</td>
+                            <td>Emma Johnson</td>
+                            <td><span class="badge badge-kids">Kids Intermediate</span></td>
+                            <td>Green</td>
+                            <td>2023-01-15</td>
+                            <td>emma.j@email.com<br>(555) 123-4567</td>
+                            <td>
+                                <button class="btn btn-secondary">Edit</button>
+                                <button class="btn btn-secondary">Profile</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1002</td>
+                            <td>Michael Chen</td>
+                            <td><span class="badge badge-teens">Teen Class</span></td>
+                            <td>Blue</td>
+                            <td>2022-11-03</td>
+                            <td>michael.c@email.com<br>(555) 234-5678</td>
+                            <td>
+                                <button class="btn btn-secondary">Edit</button>
+                                <button class="btn btn-secondary">Profile</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1003</td>
+                            <td>Sarah Williams</td>
+                            <td><span class="badge badge-adults">Adult All Levels</span></td>
+                            <td>Brown</td>
+                            <td>2021-05-22</td>
+                            <td>sarah.w@email.com<br>(555) 345-6789</td>
+                            <td>
+                                <button class="btn btn-secondary">Edit</button>
+                                <button class="btn btn-secondary">Profile</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1004</td>
+                            <td>David Kim</td>
+                            <td><span class="badge badge-kids">Kids Beginner</span></td>
+                            <td>Yellow</td>
+                            <td>2023-03-10</td>
+                            <td>david.k@email.com<br>(555) 456-7890</td>
+                            <td>
+                                <button class="btn btn-secondary">Edit</button>
+                                <button class="btn btn-secondary">Profile</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1005</td>
+                            <td>Jessica Martinez</td>
+                            <td><span class="badge badge-teens">Teen Class</span></td>
+                            <td>Orange</td>
+                            <td>2023-02-18</td>
+                            <td>jessica.m@email.com<br>(555) 567-8901</td>
+                            <td>
+                                <button class="btn btn-secondary">Edit</button>
+                                <button class="btn btn-secondary">Profile</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1006</td>
+                            <td>Robert Smith</td>
+                            <td><span class="badge badge-adults">Adult Beginner</span></td>
+                            <td>White</td>
+                            <td>2023-04-05</td>
+                            <td>robert.s@email.com<br>(555) 678-9012</td>
+                            <td>
+                                <button class="btn btn-secondary">Edit</button>
+                                <button class="btn btn-secondary">Profile</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="pagination">
+                    <button disabled>Previous</button>
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>Next</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="loginView">
+            <div class="login-notice">
+                <h2>Student Management Portal</h2>
+                <p>This area is restricted to authorized instructors only. Please log in to access student records.</p>
+                
+                <div class="login-form">
+                    <h3>Instructor Login</h3>
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button class="btn btn-primary" onclick="document.getElementById('loginView').style.display='none'; document.getElementById('loggedInView').style.display='block';">Login</button>
+                    <p style="text-align: center; margin-top: 15px;"><a href="#">Forgot password?</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Dragon Spirit Karate Dojo. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // This is just for demo purposes - in a real implementation you would have proper authentication
+        // For now we'll default to showing the login view
+        document.getElementById('loggedInView').style.display = 'none';
+        document.getElementById('loginView').style.display = 'block';
+    </script>
+</body>
+</html>

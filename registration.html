@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Spirit Karate Dojo - Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .registration-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .form-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-header h2 {
+            color: #b30000;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+        .form-col {
+            flex: 1;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        .checkbox-group {
+            margin: 15px 0;
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .checkbox-label input {
+            width: auto;
+            margin-right: 10px;
+        }
+        .submit-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1em;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #8a0000;
+        }
+        .required:after {
+            content: " *";
+            color: #b30000;
+        }
+        .form-note {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://static.vecteezy.com/system/resources/previews/006/946/260/non_2x/simple-karate-logo-vector.jpg" alt="Dragon Spirit Karate Logo" class="logo">
+        <h1>Dragon Spirit Karate Dojo</h1>
+        <p>Traditional Martial Arts Training Since 1995</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="student list.html">Students</a></li>
+        </ul>
+    </nav>
+    
+    <section class="content">
+        <div class="registration-container">
+            <div class="form-header">
+                <h2>Student Registration Form</h2>
+                <p>Please complete this form to register for classes at Dragon Spirit Karate Dojo</p>
+            </div>
+            
+            <form id="registrationForm">
+                <h3>Personal Information</h3>
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="firstName" class="required">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="lastName" class="required">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="dob" class="required">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender">
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not-to-say">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Contact Information</h3>
+                <div class="form-group">
+                    <label for="address" class="required">Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="city" class="required">City</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="state" class="required">State</label>
+                            <input type="text" id="state" name="state" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="zip" class="required">ZIP Code</label>
+                            <input type="text" id="zip" name="zip" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="phone" class="required">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="email" class="required">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Emergency Contact</h3>
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="emergencyName" class="required">Full Name</label>
+                            <input type="text" id="emergencyName" name="emergencyName" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="emergencyPhone" class="required">Phone Number</label>
+                            <input type="tel" id="emergencyPhone" name="emergencyPhone" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="emergencyRelation" class="required">Relationship</label>
+                    <input type="text" id="emergencyRelation" name="emergencyRelation" required>
+                </div>
+                
+                <h3>Class Information</h3>
+                <div class="form-group">
+                    <label for="classType" class="required">Class Type</label>
+                    <select id="classType" name="classType" required>
+                        <option value="">Select a class</option>
+                        <option value="kids-beginner">Kids Beginner (5-7 yrs)</option>
+                        <option value="kids-intermediate">Kids Intermediate (8-12 yrs)</option>
+                        <option value="teen">Teen Class (13-17 yrs)</option>
+                        <option value="adult-beginner">Adult Beginner</option>
+                        <option value="adult-all-levels">Adult All Levels</option>
+                        <option value="private">Private Lessons</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Previous Martial Arts Experience</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="experience" value="none"> None (beginner)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="experience" value="karate"> Karate
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="experience" value="taekwondo"> Taekwondo
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="experience" value="judo"> Judo
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="experience" value="other"> Other (please specify)
+                        </label>
+                    </div>
+                    <input type="text" id="otherExperience" name="otherExperience" placeholder="Specify other experience">
+                </div>
+                
+                <div class="form-group">
+                    <label for="goals">What are your goals in studying martial arts?</label>
+                    <textarea id="goals" name="goals" rows="3"></textarea>
+                </div>
+                
+                <h3>Medical Information</h3>
+                <div class="form-group">
+                    <label for="medicalConditions">Any medical conditions or injuries we should be aware of?</label>
+                    <textarea id="medicalConditions" name="medicalConditions" rows="3"></textarea>
+                    <p class="form-note">This information will be kept confidential and only shared with instructors as needed for your safety.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="allergies">Allergies</label>
+                    <input type="text" id="allergies" name="allergies" placeholder="List any allergies">
+                </div>
+                
+                <h3>Agreements</h3>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="waiver" required> I agree to the <a href="#">liability waiver</a> <span class="required"></span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="photoRelease"> I grant permission for photos/videos to be used for dojo promotional materials
+                    </label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Registration</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Dragon Spirit Karate Dojo. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real implementation, you would send this data to your server
+            alert('Registration submitted successfully! We will contact you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
