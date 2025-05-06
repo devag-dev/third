@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Spirit Karate Dojo - Schedule</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .schedule-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .schedule-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 25px;
+            flex: 1;
+            min-width: 300px;
+        }
+        .schedule-card h3 {
+            color: #b30000;
+            margin-top: 0;
+            border-bottom: 2px solid #b30000;
+            padding-bottom: 10px;
+        }
+        .class-time {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ddd;
+        }
+        .class-time:last-child {
+            border-bottom: none;
+        }
+        .class-name {
+            font-weight: bold;
+        }
+        .class-instructor {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .notice {
+            background-color: #ffeb3b;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://static.vecteezy.com/system/resources/previews/006/946/260/non_2x/simple-karate-logo-vector.jpg" alt="Dragon Spirit Karate Logo" class="logo">
+        <h1>Dragon Spirit Karate Dojo</h1>
+        <p>Traditional Martial Arts Training Since 1995</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="content">
+        <h2>Class Schedule</h2>
+        <p>Our regular class schedule. Private lessons available by appointment.</p>
+        
+        <div class="notice">
+            <p><strong>Holiday Notice:</strong> No classes on December 25th and January 1st.</p>
+        </div>
+        
+        <div class="schedule-container">
+            <div class="schedule-card">
+                <h3>Monday</h3>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Kids Beginner (5-7 yrs)</span><br>
+                        <span class="class-instructor">Sensei Johnson</span>
+                    </div>
+                    <div>4:00 PM - 4:45 PM</div>
+                </div>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Kids Intermediate (8-12 yrs)</span><br>
+                        <span class="class-instructor">Sensei Lee</span>
+                    </div>
+                    <div>5:00 PM - 5:45 PM</div>
+                </div>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Adult All Levels</span><br>
+                        <span class="class-instructor">Sensei Tanaka</span>
+                    </div>
+                    <div>6:30 PM - 7:30 PM</div>
+                </div>
+            </div>
+            
+            <div class="schedule-card">
+                <h3>Tuesday</h3>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Teen Class (13-17 yrs)</span><br>
+                        <span class="class-instructor">Sensei Martinez</span>
+                    </div>
+                    <div>4:30 PM - 5:30 PM</div>
+                </div>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Adult Advanced</span><br>
+                        <span class="class-instructor">Sensei Tanaka</span>
+                    </div>
+                    <div>6:00 PM - 7:15 PM</div>
+                </div>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Sparring Practice</span><br>
+                        <span class="class-instructor">Sensei Martinez</span>
+                    </div>
+                    <div>7:30 PM - 8:30 PM</div>
+                </div>
+            </div>
+            
+            <div class="schedule-card">
+                <h3>Wednesday</h3>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Kids All Levels</span><br>
+                        <span class="class-instructor">Sensei Johnson</span>
+                    </div>
+                    <div>4:00 PM - 4:45 PM</div>
+                </div>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Family Class</span><br>
+                        <span class="class-instructor">Sensei Lee</span>
+                    </div>
+                    <div>5:15 PM - 6:15 PM</div>
+                </div>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Adult Beginner</span><br>
+                        <span class="class-instructor">Sensei Lee</span>
+                    </div>
+                    <div>6:30 PM - 7:30 PM</div>
+                </div>
+            </div>
+            
+            <div class="schedule-card">
+                <h3>Thursday</h3>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Teen Class (13-17 yrs)</span><br>
+                        <span class="class-instructor">Sensei Martinez</span>
+                    </div>
+                    <div>4:30 PM - 5:30 PM</div>
+                </div>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Kata Training</span><br>
+                        <span class="class-instructor">Sensei Tanaka</span>
+                    </div>
+                    <div>6:00 PM - 7:00 PM</div>
+                </div>
+            </div>
+            
+            <div class="schedule-card">
+                <h3>Friday</h3>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Open Mat</span><br>
+                        <span class="class-instructor">All Instructors</span>
+                    </div>
+                    <div>4:00 PM - 6:00 PM</div>
+                </div>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Black Belt Club</span><br>
+                        <span class="class-instructor">Sensei Tanaka</span>
+                    </div>
+                    <div>6:30 PM - 8:00 PM</div>
+                </div>
+            </div>
+            
+            <div class="schedule-card">
+                <h3>Saturday</h3>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Kids All Levels</span><br>
+                        <span class="class-instructor">Sensei Johnson</span>
+                    </div>
+                    <div>9:00 AM - 9:45 AM</div>
+                </div>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Adult All Levels</span><br>
+                        <span class="class-instructor">Sensei Martinez</span>
+                    </div>
+                    <div>10:00 AM - 11:00 AM</div>
+                </div>
+                <div class="class-time">
+                    <div>
+                        <span class="class-name">Self-Defense Workshop</span><br>
+                        <span class="class-instructor">Sensei Lee</span>
+                    </div>
+                    <div>11:30 AM - 1:00 PM</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Dragon Spirit Karate Dojo. All rights reserved.</p>
+    </footer>
+</body>
+</html>

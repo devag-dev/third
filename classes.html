@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Spirit Karate Dojo - Classes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .class-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .class-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .class-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .class-info {
+            padding: 20px;
+        }
+        .class-info h3 {
+            color: #b30000;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://static.vecteezy.com/system/resources/previews/006/946/260/non_2x/simple-karate-logo-vector.jpg" alt="Dragon Spirit Karate Logo" class="logo">
+        <h1>Dragon Spirit Karate Dojo</h1>
+        <p>Traditional Martial Arts Training Since 1995</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="content">
+        <h2>Our Classes</h2>
+        <p>We offer a variety of classes for all ages and skill levels. Find the perfect program for you or your child.</p>
+        
+        <div class="class-cards">
+            <div class="class-card">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTExMVFhUVGBoaGBcYGBkYFxUaFxgXFxgYFxgaHSggGBolGxcXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lHyUuLTUtLS8tKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAFBgQHAAIDAQj/xABHEAACAAMFBAcDCQQKAgMAAAABAgADEQQFEiExBkFRYRMicYGRobEywdEHFCNCUmJy4fBDgrLSFSQzNFNzkqLC8RbiRGOT/8QAGQEAAwEBAQAAAAAAAAAAAAAAAgMEAQAF/8QALBEAAgIBAwMDAwUAAwAAAAAAAAECEQMSITEEE0FRYYEiQvBDcZGhsTJS0f/aAAwDAQACEQMRAD8AtoR7C1YtrkdQ3ROKgHVTqK8YmptJJOocdo+BhXdh6h6JegXMamBq7QWY59JTtVh7o6i+LOf2yd7Aesbri+GZpfoSzGhjVLVLb2XQ9jCN6iNMNDGhjZo4s8cab1jI0DxtGHHsZHlY9jDjYRkeRhjTjUmPKxqTHhMYcbVjFaOTGI9ptGBHc6KpY/ugn3RlnHK+b8kWZcU6YFroNWbsUZmAMr5QbEzYSzrn7TLl5EkRTV+X3MtE1psxqsx7gNwHACO2z13rPYh3YU4b4x7K2FFNukfQtktKTFDoysp0KmoPhHesV3sbZ5NknKEaZSaMDBmquKtUam47v3osKBUk+A5QcdmazdIo28yBa7VVsNZzA8aa+sXmwgU9wyMTOJUsM5qzYRVjxJgoy02LkrKZILDPGeFFNMcc1scw6S5pP1uq2bbt0Xel2rwiXLsijcI3W/QHSUcLtm5fQTTQ10OnD8o2Fzz6EfN5mZrXgOH5RdrWBeEYthXhHa5HaUUkLhtJJIszZ0pWgpT4xtP2dtTIyCRSuYzGvD9ZReQso4RyNjXhHa5J2bpRU9/WQy3u2WRQrhBHMNLrFm3z/dZ3+U/8JhM+UBALZYB98/xS4c78b+qTv8p/4TAt2jUCdjhWRd/+UfRIiXHdvTWqZUEorszdgdsu/SJuxq/Q3f8A5H/GXBnYKX/eOb+9oCcVKcUwovTFs2mJKBNEPnHsGpt3OSaPQbhHkP7S9P6QvUV7cMv6Fcvqr/CIkup4CNtm0+gX8K/wiJk6RHmtF0SDLkDDmK5xFvOWOiOQrl6iDQRQMyAKZxDvGUhQhWU1pp2xlAt7kewyPolyERbfe8iR7c1Qa0CqcTCmtQDlTnArazaZrMiyJQ65WpevsVyoBx31iupk4YqtVgWq+pYgULCp36+MPxYHJWwZSSLI2h2ueQEWQSXZQ5LEqEVvZBUkHERnTcKcYU7XtRa5p+kmueStQDsUAL5wG2kvBZ1qmzEIIZjQgKaqKBdd1AMojWKWGPWxdioB401EVRgooXLnYcbr20tUilJpdfszM658TmDroacjFlbP7QNapXSy2XCMmBWjIRmQaGh7dDFV3JcqNSlSd+IAUHZ7obJDGz5y6BmUqcgA4IyxAcN0LlkSYfYk42DbFtS9vtZWYzLJWuBEJWtNCxGuUP1zzzK6tWZDpiapXlU50hFuW75aS5TqmB+jAZaU0oCSd5NK15xPnzpNmrOOMmqnCW6pZTktd3HPhErzN5NizsRWJ3T9ywDbwNQY2FuU8fCEEbfyjrK8HHwjxtvpQ0lH/WPhFfcPLH7phGGYOMCbrvBZ0pJgFMYrThy5xME0R2o4klxEC9J0ro2lzHC9KrKNd4odO2OvSQt7YMCZQw1ILHSvAcDAuewSKfW4Zz9IRg+jcoQTQkg06uVOysHrgs9AuFeuNRkCSNdYm227Z0ua82XKZ5MwAuFDDA4+tUDKtAe1Yg2eoOMdtYCcpS/YrwqK3XIwrKn9IxJChXXDmTkDrkop4bofJ+1NkH169gitkt5eYmF2D0pSqgNnp1t+e7OCk+y/e8x/NApuIOfwNjbYWbdjPYB8Y1/8ulHSW57j8IX7uuCfOzlozL9rq4f9RakeXtsjeL/RSpQVSOu7vLA19kUJO7PLeINa3wT7BO0bf2dSVIzG6p/ljaXtqWFZctSOOIH0aANl+Si0N/a2iSgruDTCPEKK98Llmu+VZphcvNYg03INaUKipPjGzuC3YcMevge5m2FoOQRB+uwxxfaO1H9oF40GnkICzreFAqejDcACTqczqBQRtY7ZKpkS50OEEiueraDKh7KwhZHLgc+n0rdhiVtDa1zDYx5++O6bdupo8ry/MekQ5+ByCaVIFK4ToAANFMQp0mjChP8Av/8AaGKTXkl2I+016LaZ0mbiCGSaqMBYE1Bz6w+zHe37S2mZImr0srD0b1USWBIwmoBMzLLlHC1SRXXz+KRwtYC2eea/sn/hP3RGqTs3YddhpoaVYAN0j3S4PbBH+8f5n80KXyZPVbIOElR5S4bNhDnaf8wf8od+pH5/wz7H8DbijIq+3bV3r0j4JGFQxAGFWpTLUtmco9h3dx/9l/KA7c/Rm9wzMNnVjkoRSW3DqjUxwTaexu6y1nozMaACpqToK6ViLeEsG6GxMwQGUz4dSoUZekU3KthSaJgJBVgw/dNR35CJYdOpK2x7zNbI+g7ylt0TnCQMO8GnfUQrpZVO9fKHi87ZjsTsDiDIpqM8iRnCTI1+sO5oDJDRshWvWV3tZPx2x1FCJYC8jhHI8SYHbjXKoY55Z0FOzLKN7wYmY0yp6zGhpvZy+WmVKc84ijMPlUipz1BAXLv90Vw2QTI11Si81ZdaYjSu8ZE07d3fDU1xdBMCsQ4rTNSKGgI15EGFmTY5jOWlI5IAcEAkqKijeJArDU159MkrqYSFBZsVcTaEgUGEcBnQAZwrM5LjgdgUXs+RrssppYDItQ2pGefPhEe7TNnugIIDTAqno2rSubFdaAchzjLotxVcFcoO7MWtjaZcvo/ZYsGBFMOEhudaHhviWKtpe5bN0m16A+/LunSnZWrlTC4GR4EUgTabHPmSjOZKy1OFmUaMuRL794z0i27+sfSSm+0lSp48R3xy2fsGCzrlQtV2B4vnQ91B3Q2PT1N+hLk6jXi9/JSplLz/AF3xydF/X/cPW3uy6gfOZICLl0iAZAk+0ANOB8Yr6bZvv+sc006ZHZY+zVt/q8scBTwJg2k6EvZ56S0HAQzyyYywkERM4QB2js7TZsmWACWqBlvyrU0OVM+4wWltSJF1Wes5px+ouFe1q1PgAO+CirdGsJ7PXEllQjFiLEEmgGgoB2a68YhbRbFyLVV0PQTT9dVxK/40qA3aCDzgitt1BGe7mImta1oKZ08osUVVAW07EGT8nM2W1Q8t6byxUHLXDgNOypg1dOykuWcc4rMO5AOoOZORbwAgxNtprkKmuX5x7PFaZ6a84BYYp2a5SfJLE0qFw5DQACgA4AboxnJiOZwpWvdygXeW1EmSQCCx+7Q07QDl30hjklyDTD8tNYTb12TsyTDNKFizOTXrDrmuQOQpU0yhjtlrdZfSBXI3hQKgeNYVLyv5J6YCry8NddScqDXMV313xP1M46a8+CnpotS1ePIoWmzJiKgF1UkA4TmNx9nKOtmXCKBGA1pQgV40qM426KZvdfD4vGLZW/xR3Bf5TElAN+5MYtQUU0ppSv8ACTAq2sAQcIHiPUQXSzLQZ1PGqg/8Y42uznczeJP/ACMEkCpAaZNHEf644Xk4+bzqa9G31q7u2CU2zP8AaPgYg38jLZZxJ+ofODitzrGz5LjlZ+UtfRIbNiZwUWlmqAHB/ihT+S7/AOP+BPRIcNi0ztIP+IPQw/8AUj8/4Z9r+Cjb4tJmWic5L9aa59o73POMgrtvdOC3T1lrhXECFAyGJFY6cyT3xkFqCXA3TbzMizzEmYZdlChBiBafaDgoVly8sI+8fCKftllEuY6sDVGI7tx7xnByw2S321jaJnWSQOtjOEVCkgKvGmcBr3t2N8ZXrYQGz1Zcq17AvnBQ2VCpJ2PfyZ39MdJ1kYEyzKdkrqhXOnYf1rBtAMLDpdx+zwgD8k6qVtUzDmJJUZ1PWqTlu0EHJEzl5NE2Z2zVsI20l3CUuR6qvl3heHAYYWFmUY4ciHy3AilCOG7fFj7ZLWVUioz5UODKteYGmcJ+ylwrbLUiOWwCrPTUKoXfuqSAO/hDMTuO4yW4W+Tq1mTaqrLeZiXCEUFmoSDQha0GXCme6LQteykm0qG+azbM50NJY/1qjlfQwcuGzSZEsJJlpLH3QB4n3nOCwmkHUgRQo7UxTlTtFQ3hspbJTFeiZl3MmYYeoPIjx1ho2GuwSzjmhVnFcISpJWhNWzJAJFKgQ7TraFw4qYWahqOO/wAaRFmXRK6XF0eZzqCad0L7KTtDXnk40zvMNctCfAjf3xJCZCIVsmMhFGNDyGUc/nm4saw3SJNb3sgmSZqMKKUYVbIZjI1OXCKSm3ZaCcpB/wBo8zFq7fT2FkelfaTIVJPXHvpFU3lOtCUDhlLCoBOYHMA1XsNDEnUWpKh+PHFx1SdBm5LLMWiuVU/ZxKT5H3w0JPC5a8+zI+cIl0yHmDEG+krlirQUPLOsH58m1KUbowVDBj0bAvQgh1AYAEE5xNLWU444K5GKY8G7pUdCDxJPnT0ELspAqAZ6fWOIjkTBy5WDSJedQVB7a5++H4N5E068E6dZQ4yMeSJJp6mOJkspqhMSJDNXrLSu/d2xX5F+D1JVD7/fA+9r7kyPbcV3LWrHu3d8G2sa4alq4iAD+IgVHjFPzZZBOIGtcyczXfWrQGWbictwnfO0LzuqhEtN4qCzdprkOQghsFdZaYZzMCiVAqFoWOvgPWFg9np/PFk7N2Xo7LLBGZGIjgWzpE8LlK2EMS2gUgTeNz2a0qKy8DGtHSisD2aN3iJTyScgDyjaSGUUI7ooaT5MFyzbCIG+knsU3AHCx7Tuie+w9lrrOpymGJivU1pQjU6+sdnxHU9XvgVjj6HbkG0bP2ORLxMGbcuJ2zO4dWn6ELNouSWxJE1FB0B3csxDNfl39LLCliAGBGHvHvhIvqyYJmBGyAFcTZ1OfEbiIRljK/p2Q6HbUfq3ZNTZhCc54p90Ak95XKBnyhXNKlWJ3lVGRBBNSajI04/EQPa1zpbDA4FDUCo+MDdqrZMeyTMbKxGmmLPCNdaUA8ICClqVhSli0OluN3yZH+7/AIE9Ehy2LbO0f5g9DCd8mS52f8KeiQ4bFft/xj0MU/qR+f8ACf7WBtp7vtb2mY0qQjocNGJFTRFB1PGsZD4V5xkOeOxWoqa4bHNSx25mGAzKNLbI1xS6IRzrTWKitgnKzFxm1akgHXU9sXJfV5olml2dq450pSvIS5dSeWusVPewoNT3wrCmofyP6ievI2ywfkau9llT2anXIFK7gp18YJy0Ubz5fGFf5Kr6Eq1CQxP0goKnKtMQ79R3w22mTSY/U+s3qYTlVSAv6UCdrMPzWYaVoCaGmoBwnI1ybCe6OHyWXeRaLUxoaJKUH8QL08AsTr5speS6hNRx7/dE75PZAHTkClVk17cL+7DG4n4CjwNHzbEN8dms7ahyRwroeEbyWOdI5T7OSQQ5R6funu7KRYuAWiXa5OKVTgIy6LZkAx03xBW9HQ4ZqfvDQ/CPZTYyTLU59g9Y61Z2l0HbQitTOI5lpXTPlAe2zLQikiU703KVJ8CwgUt7z3HUTC2XtdfBUnNgpAoAK5GMc0jFAbLUMWVMj+hFLbVOPnc/X+0byy4Q77Wz7RZ5tnYTCUfJiQvtinEdWorpCHtTLw2l/vUbxHxETZsty0B9v6NfuQbHaZwb6KlN9cs/CGCXaLxIyaX4/wDrAK51q8PUizDCOyEziuToTrYXZovJ5iAOhBBBUNSpOhPV0GcWZcdnlpJWWh6ssBQT90AVhbu5VScrGlMxnpmCM+EMt20NV6ooa0WufjvhmBJMOTtBFZn2czxjpKWlS1Tln3xqh3AUjtJl1xA7xFiEHeeowKBxSncy/CKsv+z4LROBH7RtzaFiRovAiLOu3FUo4PUNQdxBrv4whba0a1TDgrTCCc8zhH3TCeoWyOQHuezCZORSoIzJBDUIUVIzAiz7MlUFRTIHkMtIq675yy5lSpUEFSVrUA8OrFkhmZF3JhBBrkctTCsQzajadeJUUXrEClYjWO0ufaNCTpT0jvYTLYkA6ZZigb8NdYmotCNOUOS82c2ltQuXze4kYQyucQJGEZGhoanjA1tshulEn7x90ENs5KizSsQqQcJ5krUnfvWsIqov2PX3JCJykpNGtpJDom1TsvsLmMt4B4mhzgFaGLEszVJNSet8Y4yFGEVQab/zWPJyrQ9Qf7f5Y62+RTYOtZFdf4vjAnaZ1+aTRUaDTX2h94xNcCvsD9fuwP2jb+qzRQDLnxEZHlBeB2+TRs7P+FPRIb9i/wBv+MekJ3yZe1Z/wr/CsNmx7Gs7SmMZ90N/Uj8/4b9r+BqjI4GcOMexSJPn+8Ly6W3sPq2eyYByOFA3m1O6Fa+D6xJ2bmtMmWuaalmQk9rzVJiNfUtlpiUiuekA6VINJu2RlnPInpM0ZcDjmKAg+EW8baWGNakP1hp9bPhziv8AbO4ehs9lngk4kVWruJXEvdqIa9nXY2WQcR/s11J4RPl3SZoSmWt6aHwHwidsbMbpZiEUBAIJy9jKngR4QNmFvteZ+Me2C1TJUwOKGlRQ6UIpxhUXTCi6H1cRP0amm9jkPiY9/owN7bGgrplu+MJNmtNrApKvGxzOsTVyUbrGtKVOXAU74KWaZeNDVLPNr9ifhFdK5xbGS9ApJryGrJcEtTiNTnkCSfKD1jsITOkLljvC0S5azJlmZjUgpKYzDLHE1FDodCaVjd9urMuTJPWZQ0R0wnLXfTfBOUUC1N+4cmyqioyPrCzcvWs9rU5FXbDuIGEUp3gwqTr1LzHdCVJYtgxGoBZmGe/Kg7ombNIHWaCN8tuOuPOvGo8xEfd1TSr1HywaY3YxbQtKtFiUs8tXwrMQswFHUV38cx3xX21rrMkyZv120prhpnUcm3wV2iIe65EwAEq9Ce91OfaBCDMmHgIHJG5Ji45NMZQrkm3K30g/KLAknqjsit7omfSjSLFsrdQdkdLgVFbnSzWVpsxZa6sfAbz3CG+2XJilqspsLIKAkYg2ntr9YGg3gjcRAPZdKzmb7C5drZelYbLNONde6G4YqrYcm1wIFqW0SHoJz2Z65CaTOskw/dmkYpdeBIg9dG0rq6y7VLElzxP0czgZcz2TXhr2w2TZCTFKuoKtkQQCD21gFZ7jlIsyzrLBlzAWRXLPLBG7CT1QeUO0tcMzVFrdBp5yha4lz31p+jFYbR3mptUwrhZagZUzIUA59oiJtDbmROgInJKY0aWxYvKdSMKy5w9uWcyK19mBcm65ctgQ8wgfVZkI9xifNk1bDIwjBXLcni3IGBwqaEGmJaGh00glM2sKtQo7gbqqAQRmCPSnARBuq7ktE0SwoFc2ORoBqcm7u+HU7JWVqdQjicRqQPKAjGT/AOJ0HFci9I2mlEg9E6HsDAeYhiu+2LaHQqRRM21z7jmM4E3psgEqZTmoTFhNM/u4qgVPPnAr+jLZKIaUMbDQB1DjKoZCxGNSN3bBJ5IvdBtQktmMO3luUCXLpWpxnMbhhGpHE+EJ4tS/Z80/mjefNa0h5k9WWdLOF1OIUA0wqKUGdfGIyIg0r4PC5S1SbFShp5DUkoVB6unFfcY0tTIFOa+I+Mey5dVFMWg3N8Ih3mlF3jx+MH4E1uCZkxK6r+u4wK2nmL82mAa04H4CJRUfqnvaIO0IHzdxkKgZ5UGfIRseQh6+TI9ez/gX+FYYbktGATlAzLD0IhY+TWaBNs4/+sHwwRpM2mEqbMTCaljlvOZplWMzNppr3G40nafsOWNuA8TGQpDbumXRn9d8ZCdT9xlIrnYWeqJambSkpfFmPujW+rVLFKNXXeSBHaRYHl2eassKxd0JbMeyHyOuuLygTaLqntSoUfvflFctEndnY82WEdKQ/bTXvZ7TYmkAPiCLh6opiShG/lTvjvca/wBXkmhzlrx+yITZ9xW0yeuFA1qK1oIY9lbaiSmWaZvSLQ0ATC1SFogI3ChNTxhP27u/2AnC3sq/cMPL+63gPjDBsclGJMmoJA6Q4QV4gDUjMVpwhWmX9ZsRXpJqkcZSH0MWjdthMuWiigwjM89SeWZMFhVsCUXHky23JY8LTJ0mThUVLFFrTwhYOz9imzMKSFAKsQAzAkgjWjaZ8IYtoSWlrLxUPtEggZjJa1yI1yOUCNm7E5tWJpYUy0YkqQEfFkBStRx03RW0vQtxYIrp5ZJPfeiVtBdCS5T2hZ86T0Y6olvhVqezkNamgr2Qp31ZLxmiXKL9OQizXQhVaWXxKi1ObGmKucN99kPMs1nbJFJmTK/YkDfyJw+MdNm1Z+ktTj+8NVfuy0qsseFT3wMo3Kvz84I4yajf5+ciPs/NsxabZbRZ1FoQEhmVSxyBwBhnkM6V3mCtwSpotU5TLCysCBWGVSu6nIVha20mGTeTzUWrLRsI1YhKU76RYd3DU0/LKEqK1V6Bye1+os265nk3VMkzMNUYuMNaYekDCvOhNYrKcF4+vxi8b8l47NPXjKf+E0ij5tlnH9mgHNhGZKTFaXLhGXYw6UUMWNYz1BFYAzJbV+jqOeXlDBZNqZiqA3Rd2KFSaoKOOV8Fl7JvR5nYvq3xhnCk7/CEbYm0FpZtEyih+qlA1KA5sa7q5dxh3s7VAKkNzBBijC9jJol9LhXXxjyXNB41Gh05RDvC0YcKmudTu3ZR7Jnfow6xdHW8LsWdKmISAXHtgAMCDiU5a0OfeYrS97HMkOUmLQ7jiyYcVJbMRaEqbGXjYZdoTBMFRuI1U8QYVkx6t1yapUVhs1aitpTKgaqk1B1038QIseTPocOeeWmnaYr2+7nn2WaOqGAOJHFQGoajcaHlBU7QF6hVZRQYnNRhLZUHDhWExlp2YyK1bDdeiyXLSpoV1OGqFQwNKMKgg6HONpdlkkIBKw4BRCFC4BpRaaDlpAKx2g72JO+pzPedYKybQOXjWHqVmShQIvPZtyXmYl9hlNRm6jNK7gy5rnkRTSlCgCWnDyHwi5pFohW2p2WrWdZxnq0sVz5oAR4eEJyY/uR2q1TFSmQHWyA0H5QKvUGmSv4flByXNegGenP+aAt7lzuPl8TAWAuQG4bg3jT3x2stgE76NgKEaVr74jzQwOh8h7oI7PMemUGm/fXdBJ7ms77N7EtLZzNw5nqFSQVAy1BFDpBx9jZJNTWvHE9fHFB5dR2H3RIURrluGkLf/h6f4k7/APab/PGQyGYOMZGagqE2VdlmRWU2pTiIOUt8qV5c45C6bMTXpppp9mUfeRHlgu+aGqyg5aEiJFokzuKr3x5cuplwkv7/APT1F08fNk20mzMpU9NQjcqj1aIUlbJKDAS5prSpZkByNcsjSIrWWZvmLHCZdrH9r5GBWfJ6r+DXgh6f2ErvWyGdL/q56zrmZlfrDdhFeyLIFpqep0g4ggEd1TlFTSbDgZXxsSpDDq7waj0i07NagwDA5MAR2HPOPR6HI3akyHq8aVNIKoQ1CVFeYFR+u2Nvm3Xx1zpQ5a7x4RHlTIkB49Ig3FPaAs0+Yh1mdDIBWpIRy8yaR2oghsaX0ahUw4QAAOAAyEALOMdtmH/DIPe0tFXy6TxhiayIwrQBvtbz28YFLlhSfCKb+UOotjMNTKXxJYegiw7GuR45QqbdWF0mvMIIrgUbgQFY1B351hzkqRnh1APxiXHfclf5yUTrtxo52gYldeKkeKkRSgskz7NPAReol1NYp60qVdhTIMRuGhMJ6tcMZ0z5F+0XbMJ1UfvCJd17MTZ0xZakZkYiKnCu9juyieqlju8YsHYu7VSQXIoZh1PBSQAOWpheJSm6GZGoqyc1jCy1lqtFUBQOAAoIFz7sA3gHkanyhimWVFFWKiIrqD7C5cT8IucETRkxfE95ZqzFlHHcBmSDE+5NoJM8VlODTUaMO1TnAjal6/Qg65ufRff4QuLdwUhlcqRoQACO+JXm0Sof21JFsSbbBCz2uK92cvligW0MqzKkVB6rCuRqBkacqekONiwsKh+WhivHkUiXJj0he12aXPlmXMWqnyO4g7jCvZNmjZlmIWDq71U0A6tAAGAyrrDRJFBUHxyjaeodGVsxTdXdpQwco2Li6YlGS0s0U9U6A5gH3ROkzKaqQeRjW3WFBqSOVST+UdLHaxkrUqa4a6sBr3xOtnRS7aslWe0gH63hBWTNpvPeIgyHJ3Adg8YnWdqrWnfxh0REha25kYEFplFVzpMBIUHF7LVprXI8axUt7XvMarY5eEanEzDUDceY8YuPbiwCfYbRKIqDLLc6oQ4pz6sUalwoqOtWo1MidaEH3eUKyyUXv/gzHj1K0gZaLzU/tAexCfMxraLWykBXcNQGooMiKilM+ETP6BXdhHafziSLqFRR10HkIDux8DO0/QjWe9rQKfTzf9bfGCK35ahpaJn+oxulzc/KOr3Plru5CEydscogx9orSST0hPMlqmmW5hHkD1sc8CgCEDfnGRYu3XgifdvyWy0pVO+vZ8Y5Geo3H/aI62l89F05n3QKnTuGEdi/GPJeOPoevrYas8xdKecZPlZ5L5mI9gm5ir0yH1c/QxKtMypyxnvpGuCS4Ac3ZGNm4qPAwSuKewPRajMjlTM90DHr9nxMMOz1gZFeY6YSwAXjTUnPccvAwzBF61QrLL6dwjZ7ZTWJ/wA5qMoWbUzq1UzJGmo367o7WW+VBwsq15Ege+PSjkraRJLFe8Qnc1lZGmu5q0yYW7gAqjwEHpM2Akq2A6J/u/KJkmdy8/yhyarYRJO9yfeNhl2iWZcwVG4jVTxU7jFbX7closzMelmYfqsHcBqcQDkeUWPIeOs+UkxSjgEHUfrQwvLiU+OQ8WXQ9+CmJt5WhhQzphHAuaHzziKFPH9eEMm09ypIaYAzKVoQCKowJyodQeXKBVx3UbTMw42CgVdgNBy4k7vyjyXGWrS+T0Nkr8BPZS5MZ6eYCyKequ5iN7fdB3b4cXJO8gbgD6UjrIKS0WWiNhUUA0yHqY8q50UKPOPSxYlCNEU5uTs5CQBmdeeZgZfV5rKU113KNSYmWy0pLBYnEdBxJ4Qn3i0yY5YsQTwBp3QvPmUVS5G4sbe7IDzWclirEsak0jyp+x40+MdOg4ufL3x50cv7Ve+voI89soo4sx4L+uyLG2VYizysQUMRlqajOmvLOEm7rv6ZxLlrUneQaAbySd0Pl2WMy+oTXAAoOlQAM6bvyizpObJ+o4oKAVNTG896Ix4KfQxzDRlrH0T/AIT5xe+CRci4Grm2gzJPAQn3lbHmTukU4cJ6meYA0Pade+C9/WliOilnL6xqMzw7IAtZm3t6x5eXJbpHoRiWDdNtEySu5qDF2nhyrWDEkUy3fCE7Z60qrS5YdWLyxUA5qZbO2faCfCHFdAeB/XvizDLVGyXLGmY8sMKHQgg9hyio7Vd0tSVYioJBqeBpui35a5dhiudprIVtM0BAatWpNPaAbSnOFdWtkxnTPdoWXssnt7FJ9Y72GTLxiise2gHkY6tKfgg8T8I9kuVNS4HYBESluVtB2TZVNPo1784mpZOCqOwRBuu0h69c5DjEyXaEOgJ8YagWKFusTLMcY9Cdy9sZDLPsSsxYyjnHkH8GbHk2ykoWGoyoF18YCTZL8G/2D3mDkq2P0TgK5J4kDTshcmmYT7IHa5PoIR4G+Rn2du/HUshNN5YH0EZbLOAxFVGfE/zR02MLBXXLFrlX35GNUuydNmEYqCubGgA8vIQbjcVQu6k7N7nu5Zs0AkFV6zUG4bq8zQd8NNqcnIU7xWOdhstns6kKzsxpiYmpNOA0Azj2fa2OgCA7zm0W4MWiO/JJklqltwD7XIy67ZcNB4QFtQVAzU9kadug8SINT1G8kk7zAC8podjTFh3bgab84DqJqKHYk2RpF7NWvRlvw4lPiMjDvs9NZlDsuFaZYq184BWa7ZZlqcNajjB+ynEktP3acAo+AEd0rbe7A6iKSDTUyjdRHBBpwFI6ExeQiL8oFlxz0PW/sx7IB+s+8wJ2bv8Ak2ZzZ5hK4yCJjUybTCxGg4HmYYtubxWQMZ9opRRzq2fYIpa1TGmvQdZmMedNacrkehjSljSPoBbW2gFe2kQL0vPAACOsd0KWzV/PZpay5jGdQanIjgAaZqOefpHs68mmMXYVJ/VByjcnU/T9PJkMFS3JE+0FjUk+gERns4beO8kxzmWh+FO6IqM7DMxC7e7KtiZ80l72A/d+MeHoRliYk7hTPwBiH0PFo6Jb5ElaErjO9jTLgI5Rs5EydbfmrLMlLVxqCSQQdVPd4Q6WC29LLSaAQJgDUOoxCtIrL+lZc04WZAtc+sKdlaxPl/KIsr6JZFRL6oIme0Fyr7MWdO9HIjqIKVaSzZQNQTxjjfzkWaaa0OHUaipAhTuTbl5+Iiz0CEZmZqdaezuFPGJtu2ieZLZDLRQ28sTvB0pyh2TqIaWr3J4YJ6k6FRvxOe8CNOgJ0SvbUwTJH2gPwrGkyYN7N40EeTZ6FGt02aYs6WQAoxCpoBkcjryJixlYUpX1+EVibdLHAnvMOB2kQoCiM7ECv1VBoCQScz3A9sW9NPSmmTZsbk1Q1KvnChttY/pFbMBlpWu9SfcRAyftDa8wXpyVcIA4Dee2sCrdaJz+0xPafjBZ8sZx0ozDilCVs4PYU1M1uyo+EcZ9kkAVPW/ExjibOx3k9lY8nXZMK6Hvy9YlS9yn4D2zUuT0gAVRUfrQwTs7DOg0JGQjjsdYcDoSV07fdDNdNhFHGpxHdFWOCdfIjJKrF8l/snx/OMhnNjPCMhnbA7gsyClDSWO8kwMdmrkksdi1PnBmTSnxMQZ0wA6DzPpHnNui+iVd7vxIy4AQy3fZgksCmIt1ia7z7qQl3heRlSmc0GVBlSpiPsPtmpHQT3Clf7N2NAw3KScgRu4jsizpFW8vgk6lN8D3Ms9dFp6RCtcyXLFTQnnEu0tRSzOcIFeXlCla7WrsSTluHAbop6jMsa43E4cbm9+D22XiHOWnIGIXScFPgPjHbpl3VPYI5tNO5T30EeTOUpO2XqKSpDBdk0mUMqEVEEbpU4yTuHr/ANQFuRmKsOcGrsU1Of6zi7pnuiXOvpYZTd2iNx6esclpl2iJIUcI9M80qv5VutPliukoHxd/hC5srZZeFnoGckim9QKadsMnyqSP6wjAVPRAZUNCGeu8cRCdZZD7pMyvHq/GPLz05NWephtQWw2SpP3KRNSzNwpAWySrQAKTHHJgrUHefSGKWrUFajIVqQKnjSuQPCJaSHkd7Gd5ERUsiUzbfBRsI3iIE0ipoGPYIw44mTKHExiypLfUqeysb/N5h0QjtjrLsEz6zKsYcnTIM2zrLDPgWignQbs4rgklie8xYu1bKlnPWJZqKOHM+7vhBlyxv7+zfFGBfSwMzTaoe7ruzorPLJOZGJgNatnn5DujqDwRz5Q1K8sChApy/KBVsnop6qE95MKmvISQPWXMOiAdpjoLFMOrgdgj1rZOOi0jn0U5tWp5/lAHUY92DfMr2/8AcF5VhIoAerQAdu8wFmWAfWmHxA98SJN1S19iZNHZMc+WkFGSXIUYtjH/AEIjgV14/GIFtuxpWeFSOIz8RqI5rZnplaZ/iuXiCYxy40mOT9rq1/h/VTBSlFnKD8sgdMf+so52j2cx4x5aA1TimegPeaRDnmUBUkse/wB8L2NoZ9m2GIZ6cIarlzDNxJhR2atAJGFMuP8A0IbLqxYTXIVyEeh0/gi6hchAsIyOJjIqsloR5VrTcI1mWmgZsgFBJNOEZGR5eiLdHq20IO0F5/OHzmAIMhkxpwrlEvZ3ZyWw6aY+JPqrTUjIluVRpGRkPy/TDYVHdjjXqYMblMsiSRlpvyHIRHAljf5RkZEvPI3jg9MxI06apooBjIyMaRysL3MXqa003D84h7W37OsiIZRWrkgkjFSlNPGMjIowvYVNJumL67VWt0LGcw/CFX0FYOXLZ3m2UNMd3d6vVmLZE5DM6UAy5x5GRs5N7NjFGMeERZtkocgPAR5JFNaDzjIyIR74JcpAdanyiXLlJwjIyGISyQoA0URFtVsVdT4CPIyCMRBm3mOBPaaekcTaph0VR5+pjIyMaRyYHveU804WzoMtw8oG2awdYqVFRGRkOi9jGkNd1290AExQyjIH6w9xH6rBaTaUmg4RkNa7oyMgXujVs6IVpYKd/cBEcvXie0+6MjIS0GbS3FaUEE5lFGQjIyMQa5I3TO3sxGnWeY2rxkZHVsY+Th/Ryb8R76DyjcyUUVCDwqfExkZGLk4NXJaySMsuJ+EMV2TTRssq5aRkZHo9OQ9QdGnZ7o9jIyH2Io//2Q==" alt="Kids Karate Class">
+                <div class="class-info">
+                    <h3>Kids Karate (Ages 5-12)</h3>
+                    <p>Our kids program focuses on discipline, respect, and fun while teaching fundamental karate techniques.</p>
+                    <ul>
+                        <li>Build confidence and focus</li>
+                        <li>Learn self-defense skills</li>
+                        <li>Develop coordination and fitness</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Enroll Now</a>
+                </div>
+            </div>
+            
+            <div class="class-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLjFdsP7WVkP7vY13neJQZiW1pyv5PJ6y3lQ&s" alt="Teen Karate Class">
+                <div class="class-info">
+                    <h3>Teen Karate (Ages 13-17)</h3>
+                    <p>Teens develop advanced techniques while building character and leadership skills.</p>
+                    <ul>
+                        <li>Advanced kata and kumite</li>
+                        <li>Leadership opportunities</li>
+                        <li>College application benefits</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Enroll Now</a>
+                </div>
+            </div>
+            
+            <div class="class-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNhhwInuCB_YyW2AB9EMyoDR4bNasuL-Ihqw&s" alt="Adult Karate Class">
+                <div class="class-info">
+                    <h3>Adult Karate (18+)</h3>
+                    <p>Whether you're starting or continuing your martial arts journey, our adult classes will challenge you.</p>
+                    <ul>
+                        <li>Traditional Shotokan training</li>
+                        <li>Practical self-defense</li>
+                        <li>Full-body workout</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Enroll Now</a>
+                </div>
+            </div>
+            
+            <div class="class-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAPPQLoBXbmZrQ9UQZ0s_J0y2SyZg4UXUegA&s" alt="Private Lesson">
+                <div class="class-info">
+                    <h3>Private Lessons</h3>
+                    <p>One-on-one instruction tailored to your specific goals and needs.</p>
+                    <ul>
+                        <li>Personalized training</li>
+                        <li>Flexible scheduling</li>
+                        <li>Belt test preparation</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Dragon Spirit Karate Dojo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
